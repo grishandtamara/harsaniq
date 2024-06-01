@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "heading";
+  src: url('assets/font/dzeragir.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+::-webkit-scrollbar{
+  display: none;
+}

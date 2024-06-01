@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="hy">
+
+<head title="asf">
+  <meta charset="UTF-8">
+  <title>Գրիշ և Թամարա</title>
+  <link rel="icon" type="image/x-icon" href="assets/ic.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'def': ['Montserrat', 'sans-serif'],
+            'heading': ['heading', 'sans-serif'],
+          }
+
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="block w-full  overflow-x-hidden mx-auto bg-[#d9ba911a] font-def">
+  <section class="relative max-w-[460px] mx-auto flex items-center justify-center w-screen h-screen ">
+    <div data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom"
+      class="relative z-20 flex  flex-col px-4 space-y-4 text-[64px] text-center text-white">
+      <h1 class="font-heading">Գրիշ և Թամարա</h1>
+      <p class="text-2xl font-times">23 ՀՈՒՆԻՍ 2024</p>
+    </div>
+    <div class="absolute inset-0">
+      <img src="./assets/hero-1.webp" alt="hero-1.webp" class="object-cover size-full">
+      <div class="absolute inset-0 z-10 bg-black/30"></div>
+    </div>
+  </section>
+
+
+  <!-- section 2 -->
+  <section class="relative  max-w-[460px] mx-auto flex flex-col justify-center w-screen text-white ">
+    <div class="absolute z-10 flex flex-col items-center px-4 text-center -translate-y-10">
+      <h2 class="my-5 text-3xl font-bold ">Սիրելի հյուրեր</h2>
+      <p class="text-center leading-[28px] text-lg">Մենք ցանկանում ենք Ձեզ հետ կիսել մեր կյանքի կարևորագույն
+        օրերից մեկը։ Մեծ ուրախությամբ հրավիրում ենք Ձեզ մեր հարսանիքին։</p>
+      <div class="mt-10 text-center" id="countdown">
+        <table>
+          <tbody class="text-2xl" id="table">
+            <tr>
+              <td class="w-24" id="days"></td>
+              <td class="w-24" id="hours"></td>
+              <td class="w-24" id="minutes"></td>
+              <td class="w-24" id="seconds"></td>
+            </tr>
+            <tr class="text-2xl">
+              <td id="daysLabel">Օր</td>
+              <td id="hoursLabel">Ժամ</td>
+              <td id="minutesLabel">Րոպե</td>
+              <td id="secondsLabel">Վայրկյան</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="startedText" style="display: none;">Բարի ժամանց!</h2>
+      </div>
+    </div>
+    <div class="w-screen max-w-[460px] mx-auto auto ">
+      <video width="100%" height="100%" muted autoplay>
+        <source src="./assets/video.mp4" type="video/mp4">
+      </video>
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+  </section>
+
+  <!-- section 3 -->
+
+  <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+    class="w-screen max-w-[460px] mx-auto pb-20 overflow-x-hidden px-4 text-[#231f20] flex justify-center flex-col relative ">
+    <h2 class="pt-10 my-5 text-[64px] tracking-widest font-heading leading-none font-normal text-center ">Թայմինգ
+    </h2>
+    <div data-aos="zoom-in" data-aos-duration="700" class="z-10 block mt-10 text-center">
+      <div class="rounded-full outline outline-8 outline-white size-[250px] mx-auto">
+        <img src="./assets/church.jpeg" width="250" height="250" alt="church"
+          class="size-[250px] outline-8 outline-white object-cover rounded-full">
+      </div>
+      <p class="uppercase leading-normal text-[#c3a98f] tracking-wider pt-5 text-[24px]">Պսակադրություն</p>
+      <div class="pt-3 text-lg">
+        <p>ժամը՝ <time class="font-semibold">14:00</time></p>
+        <p>Կեչառիս վանական համալիր</p>
+        <a class="text-[#bf9e7e]" href="https://maps.app.goo.gl/X6ETao2td2LdssnWA">Տեսնել Քարտեզում </a>
+      </div>
+    </div>
+
+    <div data-aos="zoom-in" data-aos-duration="700" class="z-10 block text-center mt-14">
+      <div class="rounded-full outline outline-8 outline-white size-[250px] mx-auto">
+        <img src="./assets/rest.jpeg" width="250" height="250" alt="church"
+          class="size-[250px] outline-8 outline-white object-cover rounded-full">
+      </div>
+      <p class="uppercase leading-normal text-[#c3a98f] tracking-wider pt-5 text-[24px]">ՀԱՐՍԱՆՅԱՑ ՀԱնԴԻՍՈՒԹՅՈՒՆ
+      </p>
+      <div class="pt-3 text-lg">
+        <p>ժամը՝ <time class="font-bold">17:30</time></p>
+        <p>Ք.Չարենցավան. <span class="font-semibold">Ginats Hall</span></p>
+        <a class="text-[#bf9e7e]" href="https://maps.app.goo.gl/wFpumXxjyYFLLpUc7">Տեսնել Քարտեզում </a>
+      </div>
+    </div>
+    <img class="absolute rotate-45 -right-[30%] top-1/2" src="./assets/shape2.svg" alt="">
+    <img class="absolute -rotate-45 -left-[30%] top-[7%]" src="./assets/shape2.svg" alt="">
+  </section>
+
+  <div id="video-container">
+    <iframe class="hidden" id="youtube-video" width="560" height="315"
+      src="https://www.youtube.com/embed/3RfqK54OZ0s?si=IBGPjI630utnXcK0&start=2&autoplay=0&mute=0&enablejsapi=1"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  </div>
+  <div id="custom-controls">
+    <button
+      class="custom-button  fixed shadow-md bg-[#bf9e7e] bottom-6 right-4 text-white rounded-full size-16 flex justify-center items-center z-30 "
+      id="playPause">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
+        <path id="playIcon" d="M8 5v14l11-7z" />
+        <path id="pauseIcon" class="hidden" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+      </svg>
+    </button>
+  </div>
+
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+
+  <script>
+
+    var player;
+    var isPlaying = false;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('youtube-video', {
+        events: {
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    document.getElementById('playPause').addEventListener('click', function () {
+      if (isPlaying) {
+        player.pauseVideo();
+      } else {
+        player.playVideo();
+      }
+    });
+
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING) {
+        isPlaying = true;
+        document.getElementById('playIcon').style.display = 'none';
+        document.getElementById('pauseIcon').style.display = 'inline';
+      } else {
+        isPlaying = false;
+        document.getElementById('playIcon').style.display = 'inline';
+        document.getElementById('pauseIcon').style.display = 'none';
+      }
+    }
+
+
+
+    const eventDate = new Date(2024, 5, 23, 12, 0, 0); // Event date: June 23, 2024
+    let translationActive = true;
+
+    function updateCountdown() {
+      const now = new Date();
+      const timeDifference = eventDate - now;
+
+      if (timeDifference <= 0) {
+        document.getElementById("startedText").style.display = "block";
+        document.getElementById("table").style.display = "none";
+        translationActive = false;
+      } else {
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
+
+        // Check if translation is active and update labels if necessary
+        if (translationActive) {
+          const labelsToTranslate = document.getElementsByClassName("translate-label");
+
+          for (let label of labelsToTranslate) {
+            if (label.id === "daysLabel") {
+              label.textContent = days === 1 ? "day" : "days";
+            } else if (label.id === "hoursLabel") {
+              label.textContent = hours === 1 ? "hour" : "hours";
+            } else if (label.id === "minutesLabel") {
+              label.textContent = minutes === 1 ? "minute" : "minutes";
+            } else if (label.id === "secondsLabel") {
+              label.textContent = seconds === 1 ? "second" : "seconds";
+            }
+          }
+        }
+      }
+    }
+
+    // Call updateCountdown to initialize countdown immediately
+    updateCountdown();
+
+    // Set up a timer to update countdown every second
+    const timer = setInterval(updateCountdown, 1000);
+
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
